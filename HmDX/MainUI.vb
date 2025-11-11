@@ -142,7 +142,7 @@ Public Class MainUI
         Try
             WindowDefaultTitle = Text
             ParseRegOptions()
-            ApplyBanner()
+            'ApplyBanner()
             ApplySkin()
             FormLoaded = True
 
@@ -156,12 +156,12 @@ Public Class MainUI
                 End If
 
                 'DPI compliance test
-                If LblSubHeading.Left < LblTitle.Right Then
-                    Hide()
-                    MsgBox("DPI合规性检测不通过！" & vbCrLf & "请更换计算机或调整显示字体为标准大小后运行本软件。", vbExclamation, "HmDX 兼容性自检")
-                    Dispose()
-                    End
-                End If
+                'If LblSubHeading.Left < LblTitle.Right Then
+                '    Hide()
+                '    MsgBox("DPI合规性检测不通过！" & vbCrLf & "请更换计算机或调整显示字体为标准大小后运行本软件。", vbExclamation, "HmDX 兼容性自检")
+                '    Dispose()
+                '    End
+                'End If
 
                 'Font compliance test
                 If Not (LblTitle.Font.Name.ToLower.Contains("雅黑") Or LblTitle.Font.Name.ToLower.Contains("yahei")) Then
@@ -471,124 +471,6 @@ Public Class MainUI
         End Try
     End Sub
 
-    Private Sub ApplyBanner()
-        Try
-            LblSlogan.Location = PicBanner.PointToClient(PointToScreen(LblSlogan.Location))
-            LblSlogan.Parent = PicBanner
-
-            Dim SloganList As New List(Of String) From {
-                "落实科学发展观 保持党的先进性",
-                "发挥先锋作用 永葆先进本色",
-                "一颗红心跟党走 开创美好和谐风",
-                "牢记党的光荣历史 发扬党的优良传统",
-                "实现中国梦必须走中国道路",
-                "实现中国梦必须弘扬中国精神",
-                "实现中国梦必须凝聚中国力量",
-                "跟着共产党 奔向中国梦",
-                "贯彻落实新发展理念 建设现代化经济体系",
-                "发展一带一路 提升经济密度 缩短经济距离 打破壁垒分割",
-                "共建一带一路 共享发展成果",
-                "中国的主权和领土完整不容侵犯和分割",
-                "不忘初心跟党走 牢记使命当先锋 实干成就中国梦",
-                "社会主义好 百姓日子好",
-                "奋力走好新时代的长征路",
-                "传递正能量 共筑中国梦",
-                "不负伟大新时代 同心共筑中国梦",
-                "同心共筑中国梦 不忘初心跟党走",
-                "不忘初心 继续前进",
-                "不忘初心 牢记使命",
-                "新时代赋予新使命 新征程呼唤新作为",
-                "新时代必须坚持新发展理念",
-                "坚持把新发展理念贯彻到社会主义现代化建设全过程",
-                "坚持人民当家作主",
-                "人民当家作主是社会主义民主政治的本质和核心",
-                "坚持全面依法治国",
-                "坚持社会主义核心价值体系",
-                "坚持人与自然和谐共生",
-                "坚持总体国家安全观",
-                "坚持党对人民军队的绝对领导",
-                "全面贯彻党领导军队的一系列根本原则和制度",
-                "坚持一国两制和推进祖国统一",
-                "坚持全面从严治党",
-                "奋力夺取新时代中国特色社会主义伟大胜利",
-                "高举爱国主义社会主义旗帜 凝聚起实现中国梦的磅礴力量",
-                "坚定不移高举中国特色社会主义伟大旗帜",
-                "进行伟大斗争 建设伟大工程 推进伟大事业 实现伟大梦想",
-                "实现中华民族伟大复兴 必须坚持中国共产党领导",
-                "实现中华民族伟大复兴 必须坚持走中国特色社会主义道路",
-                "实现中华民族伟大复兴 必须坚持以人民为中心",
-                "实现中华民族伟大复兴 必须坚持斗争精神",
-                "实现中华民族伟大复兴 必须坚定不移走和平发展道路",
-                "牢固树立中国特色社会主义道路自信",
-                "牢固树立中国特色社会主义理论自信",
-                "牢固树立中国特色社会主义制度自信",
-                "牢固树立中国特色社会主义文化自信",
-                "牢固树立新时代中国特色社会主义教育自信",
-                "牢固树立社会主义生态文明观",
-                "推动形成人与自然和谐发展现代化建设新格局",
-                "着力提高发展质量和效益 创新驱动引领高质量发展",
-                "着力保障和改善民生 提升百姓获得感与幸福感",
-                "着力加强和改善党的领导 用大力度夯实党建之基",
-                "弘扬宪法精神 增强宪法意识",
-                "大力弘扬宪法精神 维护宪法法律权威",
-                "大力弘扬法治精神 增强全民法治观念",
-                "弘扬宪法精神 履行宪法使命",
-                "弘扬伟大民族精神 奋斗创造美好生活",
-                "弘扬中华民族伟大的创造精神",
-                "弘扬中华民族伟大的奋斗精神",
-                "弘扬中华民族伟大的团结精神",
-                "弘扬中华民族伟大的梦想精神",
-                "坚持培育和践行社会主义核心价值观",
-                "传承中华优秀传统文化 树立社会主义文化自信",
-                "立足中华优秀传统文化 培育和弘扬社会主义核心价值观",
-                "参军报国 无上光荣",
-                "征兵固防 安国兴邦",
-                "坚定不移跟党走 同心共筑中国梦",
-                "坚定不移跟党走 牢记使命绘宏图",
-                "坚定不移跟党走 砥砺奋进创新篇",
-                "坚定不移跟党走 撸起袖子加油干",
-                "坚定不移跟党走 建好家乡同奋斗",
-                "新时代需要新担当 新征程要有新作为",
-                "新思想引领新时代 新征程激发新责任",
-                "汲取中国智慧 弘扬中国精神 传播中国价值",
-                "党在我心中 永远跟党走",
-                "坚持和平发展道路 推动构建人类命运共同体",
-                "坚定文化自信 推动社会主义文化繁荣兴盛",
-                "文化兴国运兴 文化强民族强",
-                "坚持走中国特色强军之路 全面推进国防和军队现代化",
-                "大力弘扬和践行社会主义核心价值观",
-                "大力弘扬伟大奋斗精神",
-                "大力弘扬新时代共产党人的奉献精神",
-                "奋力走好新时代的长征路",
-                "新时代必须坚持新发展理念",
-                "坚持以新发展理念引领高质量发展"
-            }
-
-            Randomize()
-            Dim SloganItem As String = SloganList(Int(((SloganList.Count - 1) * Rnd())))
-            Dim SloganFontSize As Integer = 8
-
-            If SloganItem.Length <= 14 Then
-                SloganFontSize = 16
-            ElseIf SloganItem.Length <= 18 Then
-                SloganFontSize = 14
-            ElseIf SloganItem.Length <= 22 Then
-                SloganFontSize = 12
-            ElseIf SloganItem.Length <= 25 Then
-                SloganFontSize = 11
-            Else
-                SloganFontSize = 10
-            End If
-
-            With LblSlogan.Font
-                LblSlogan.Font = New System.Drawing.Font(.FontFamily, SloganFontSize, .Style, .Unit)
-            End With
-
-            LblSlogan.Text = SloganItem
-        Catch ex As Exception
-
-        End Try
-    End Sub
 
     Private Sub ApplySkin()
         Try
@@ -606,9 +488,9 @@ Public Class MainUI
             ElseIf Skin = "None" Then
                 PicBadge.Visible = False
                 LblTitle.Visible = False
-                LblSubHeading.Visible = False
-                PicBanner.Visible = False
-                LblSlogan.Visible = False
+                'LblSubHeading.Visible = False
+                'PicBanner.Visible = False
+                'LblSlogan.Visible = False
             ElseIf Skin = "Wave" Then
                 ThemeColor = Color.AliceBlue
                 BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.Wave_Background_0001.png"))
@@ -618,12 +500,12 @@ Public Class MainUI
                 ThemeColor = Color.Brown
                 BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.Gold_Background_0001.png"))
             ElseIf Skin = "HatsuneMiku" Then
-                LblSlogan.Visible = False
+                'LblSlogan.Visible = False
                 Randomize()
                 'Dim HatsuneMikuBackgroundID As Integer = Int(Math.Round(Rnd() * 2) + 1)
                 Dim HatsuneMikuBackgroundID As Integer = 1
                 BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Background_000" & HatsuneMikuBackgroundID & ".png"))
-                PicBanner.Image = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Banner_0001.png"))
+                'PicBanner.Image = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Banner_0001.png"))
                 Randomize()
                 PicBadge.Image = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Badge_000" & Int(Math.Round(Rnd() * 4) + 1) & ".png"))
                 If HatsuneMikuBackgroundID = 2 Then
@@ -635,8 +517,8 @@ Public Class MainUI
                 End If
                 BtnNewTask.BackColor = ThemeColor
                 BtnMenu.BackColor = ThemeColor
-                LblSubHeading.BackColor = ThemeColor
-                LblSubHeading.ForeColor = Color.White
+                'LblSubHeading.BackColor = ThemeColor
+                'LblSubHeading.ForeColor = Color.White
             End If
 
             If Not ThemeColor = Color.Black Then
@@ -2722,14 +2604,6 @@ nxt:        Next
         End Try
     End Sub
 
-    Private Sub LblSlogan_Click(sender As Object, e As EventArgs) Handles LblSlogan.Click
-        Try
-            Process.Start("http://cpc.people.com.cn/")
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
     Private Sub TxtOptions_KeyDown(sender As Object, e As KeyEventArgs) Handles TxtOptions.KeyDown
         Try
             If e.Control And e.KeyCode = Keys.A Then
@@ -3079,7 +2953,7 @@ nxt:        Next
         OpenLogFile()
     End Sub
 
-    Private Sub PicPlay_DoubleClick(sender As Object, e As EventArgs) Handles PicPlay.DoubleClick
+    Private Sub PicPlay_DoubleClick(sender As Object, e As EventArgs)
         Try
             If My.Computer.FileSystem.FileExists(TempPath) Then
                 Process.Start(TempPath)
@@ -3089,7 +2963,7 @@ nxt:        Next
         End Try
     End Sub
 
-    Private Sub PicInfo_DoubleClick(sender As Object, e As EventArgs) Handles PicInfo.DoubleClick
+    Private Sub PicInfo_DoubleClick(sender As Object, e As EventArgs)
         Try
             If IsFFmpegExist() Then
                 Dim _loc_1 As New Process()
@@ -3105,5 +2979,29 @@ nxt:        Next
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub LblTitle_Click(sender As Object, e As EventArgs) Handles LblTitle.Click
+
+    End Sub
+
+    Private Sub CMSMenu_Opening(sender As Object, e As CancelEventArgs) Handles CMSMenu.Opening
+
+    End Sub
+
+    Private Sub FbdWorkPath_HelpRequest(sender As Object, e As EventArgs) Handles FbdWorkPath.HelpRequest
+
+    End Sub
+
+    Private Sub OfdLocalM3U8_FileOk(sender As Object, e As CancelEventArgs) Handles OfdLocalM3U8.FileOk
+
+    End Sub
+
+    Private Sub CMSPathHistory_Opening(sender As Object, e As CancelEventArgs) Handles CMSPathHistory.Opening
+
+    End Sub
+
+    Private Sub OfdSkin_FileOk(sender As Object, e As CancelEventArgs) Handles OfdSkin.FileOk
+
     End Sub
 End Class
