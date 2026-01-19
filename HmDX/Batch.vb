@@ -767,4 +767,8 @@ nxt:        Next
             Next
         End If
     End Sub
+
+    Private Sub ChkAutoPowerOff_CheckedChanged(sender As Object, e As EventArgs) Handles ChkAutoPowerOff.CheckedChanged
+
+    End Sub
 End Class

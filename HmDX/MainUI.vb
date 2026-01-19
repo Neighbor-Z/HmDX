@@ -143,7 +143,7 @@ Public Class MainUI
             WindowDefaultTitle = Text
             ParseRegOptions()
             'ApplyBanner()
-            ApplySkin()
+            'ApplySkin()
             FormLoaded = True
 
             If KeyRead("ComplianceTest") = "" Then
@@ -164,12 +164,12 @@ Public Class MainUI
                 'End If
 
                 'Font compliance test
-                If Not (LblTitle.Font.Name.ToLower.Contains("雅黑") Or LblTitle.Font.Name.ToLower.Contains("yahei")) Then
-                    Hide()
-                    MsgBox("系统副本合规性检测不通过！" & vbCrLf & "请更换计算机或在未经修改、完整安装的操作系统中运行本软件。", vbExclamation, "HmDX 兼容性自检")
-                    Dispose()
-                    End
-                End If
+                ' If Not (LblTitle.Font.Name.ToLower.Contains("雅黑") Or LblTitle.Font.Name.ToLower.Contains("yahei")) Then
+                '     Hide()
+                '     MsgBox("系统副本合规性检测不通过！" & vbCrLf & "请更换计算机或在未经修改、完整安装的操作系统中运行本软件。", vbExclamation, "HmDX 兼容性自检")
+                '     Dispose()
+                '     End
+                ' End If
             End If
 
             If IsFFmpegExist() Then
@@ -472,74 +472,74 @@ Public Class MainUI
     End Sub
 
 
-    Private Sub ApplySkin()
-        Try
-            Dim ThemeColor As Color = Color.Black
+    ' Private Sub ApplySkin()
+    '     Try
+    '         Dim ThemeColor As Color = Color.Black
 
-            If Skin = "" Then
-                'No skin is specified
-            ElseIf Skin.Contains(",") Then
-                Dim _loc_1 As String() = Skin.Split(")")
-                Dim _loc_2 As String() = _loc_1(0).Replace("(", "").Replace(")", "").Split(",")
-                Dim _loc_3 As Byte() = UnZip(Convert.FromBase64String(Skin.Substring(_loc_1(0).Length + 1, Skin.Length - (_loc_1(0).Length + 1))))
-                Dim _loc_4 As New MemoryStream(_loc_3, 0, _loc_3.Length)
-                ThemeColor = Color.FromArgb(Int(_loc_2(0)), Int(_loc_2(1)), Int(_loc_2(2)))
-                BackgroundImage = Image.FromStream(_loc_4)
-            ElseIf Skin = "None" Then
-                PicBadge.Visible = False
-                LblTitle.Visible = False
-                'LblSubHeading.Visible = False
-                'PicBanner.Visible = False
-                'LblSlogan.Visible = False
-            ElseIf Skin = "Wave" Then
-                ThemeColor = Color.AliceBlue
-                BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.Wave_Background_0001.png"))
-            ElseIf Skin = "Silver" Then
-                BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.Silver_Background_0001.png"))
-            ElseIf Skin = "Gold" Then
-                ThemeColor = Color.Brown
-                BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.Gold_Background_0001.png"))
-            ElseIf Skin = "HatsuneMiku" Then
-                'LblSlogan.Visible = False
-                Randomize()
-                'Dim HatsuneMikuBackgroundID As Integer = Int(Math.Round(Rnd() * 2) + 1)
-                Dim HatsuneMikuBackgroundID As Integer = 1
-                BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Background_000" & HatsuneMikuBackgroundID & ".png"))
-                'PicBanner.Image = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Banner_0001.png"))
-                Randomize()
-                PicBadge.Image = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Badge_000" & Int(Math.Round(Rnd() * 4) + 1) & ".png"))
-                If HatsuneMikuBackgroundID = 2 Then
-                    ThemeColor = Color.LightYellow
-                ElseIf HatsuneMikuBackgroundID = 3 Then
-                    ThemeColor = Color.LightPink
-                Else
-                    ThemeColor = Color.DeepPink
-                End If
-                BtnNewTask.BackColor = ThemeColor
-                BtnMenu.BackColor = ThemeColor
-                'LblSubHeading.BackColor = ThemeColor
-                'LblSubHeading.ForeColor = Color.White
-            End If
+    '         If Skin = "" Then
+    '             'No skin is specified
+    '         ElseIf Skin.Contains(",") Then
+    '             Dim _loc_1 As String() = Skin.Split(")")
+    '             Dim _loc_2 As String() = _loc_1(0).Replace("(", "").Replace(")", "").Split(",")
+    '             Dim _loc_3 As Byte() = UnZip(Convert.FromBase64String(Skin.Substring(_loc_1(0).Length + 1, Skin.Length - (_loc_1(0).Length + 1))))
+    '             Dim _loc_4 As New MemoryStream(_loc_3, 0, _loc_3.Length)
+    '             ThemeColor = Color.FromArgb(Int(_loc_2(0)), Int(_loc_2(1)), Int(_loc_2(2)))
+    '             BackgroundImage = Image.FromStream(_loc_4)
+    '         ElseIf Skin = "None" Then
+    '             PicBadge.Visible = False
+    '             LblTitle.Visible = False
+    '             'LblSubHeading.Visible = False
+    '             'PicBanner.Visible = False
+    '             'LblSlogan.Visible = False
+    '         ElseIf Skin = "Wave" Then
+    '             ThemeColor = Color.AliceBlue
+    '             BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.Wave_Background_0001.png"))
+    '         ElseIf Skin = "Silver" Then
+    '             BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.Silver_Background_0001.png"))
+    '         ElseIf Skin = "Gold" Then
+    '             ThemeColor = Color.Brown
+    '             BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.Gold_Background_0001.png"))
+    '         ElseIf Skin = "HatsuneMiku" Then
+    '             'LblSlogan.Visible = False
+    '             Randomize()
+    '             'Dim HatsuneMikuBackgroundID As Integer = Int(Math.Round(Rnd() * 2) + 1)
+    '             Dim HatsuneMikuBackgroundID As Integer = 1
+    '             BackgroundImage = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Background_000" & HatsuneMikuBackgroundID & ".png"))
+    '             'PicBanner.Image = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Banner_0001.png"))
+    '             Randomize()
+    '             PicBadge.Image = Image.FromStream(System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("HmDX.HatsuneMiku_Badge_000" & Int(Math.Round(Rnd() * 4) + 1) & ".png"))
+    '             If HatsuneMikuBackgroundID = 2 Then
+    '                 ThemeColor = Color.LightYellow
+    '             ElseIf HatsuneMikuBackgroundID = 3 Then
+    '                 ThemeColor = Color.LightPink
+    '             Else
+    '                 ThemeColor = Color.DeepPink
+    '             End If
+    '             BtnNewTask.BackColor = ThemeColor
+    '             BtnMenu.BackColor = ThemeColor
+    '             'LblSubHeading.BackColor = ThemeColor
+    '             'LblSubHeading.ForeColor = Color.White
+    '         End If
 
-            If Not ThemeColor = Color.Black Then
-                LblTitle.ForeColor = ThemeColor
-                LblURL.ForeColor = ThemeColor
-                ChkLocal.ForeColor = ThemeColor
-                ChkLive.ForeColor = ThemeColor
-                ChkTwoPass.ForeColor = ThemeColor
-                LblTaskName.ForeColor = ThemeColor
-                LblWorkPath.ForeColor = ThemeColor
-                LblContainerFormat.ForeColor = ThemeColor
-                RadMP4.ForeColor = ThemeColor
-                RadTS.ForeColor = ThemeColor
-                RadBinary.ForeColor = ThemeColor
-                LblOptions.ForeColor = ThemeColor
-                LblProgress.ForeColor = ThemeColor
-            End If
-        Catch ex As Exception
+    '         If Not ThemeColor = Color.Black Then
+    '             LblTitle.ForeColor = ThemeColor
+    '             LblURL.ForeColor = ThemeColor
+    '             ChkLocal.ForeColor = ThemeColor
+    '             ChkLive.ForeColor = ThemeColor
+    '             ChkTwoPass.ForeColor = ThemeColor
+    '             LblTaskName.ForeColor = ThemeColor
+    '             LblWorkPath.ForeColor = ThemeColor
+    '             LblContainerFormat.ForeColor = ThemeColor
+    '             RadMP4.ForeColor = ThemeColor
+    '             RadTS.ForeColor = ThemeColor
+    '             RadBinary.ForeColor = ThemeColor
+    '             LblOptions.ForeColor = ThemeColor
+    '             LblProgress.ForeColor = ThemeColor
+    '         End If
+    '     Catch ex As Exception
 
-        End Try
-    End Sub
+    '     End Try
+    ' End Sub
 
     Private Sub ParseURL()
         Try
@@ -2703,38 +2703,38 @@ nxt:        Next
         End Try
     End Sub
 
-    Private Sub SetSkin(SkinName As String)
-        Try
-            KeyWrite("Skin", SkinName)
-            CreateNewTask()
-        Catch ex As Exception
+    ' Private Sub SetSkin(SkinName As String)
+    '     Try
+    '         KeyWrite("Skin", SkinName)
+    '         CreateNewTask()
+    '     Catch ex As Exception
 
-        End Try
-    End Sub
+    '     End Try
+    ' End Sub
 
-    Private Sub TsiSkinDefault_Click(sender As Object, e As EventArgs) Handles TsiSkinDefault.Click
-        SetSkin("Default")
-    End Sub
+    'Private Sub TsiSkinDefault_Click(sender As Object, e As EventArgs) Handles TsiSkinDefault.Click
+    '    SetSkin("Default")
+    'End Sub
 
-    Private Sub TsiSkinWave_Click(sender As Object, e As EventArgs) Handles TsiSkinWave.Click
-        SetSkin("Wave")
-    End Sub
+    ' Private Sub TsiSkinWave_Click(sender As Object, e As EventArgs) Handles TsiSkinWave.Click
+    '     SetSkin("Wave")
+    ' End Sub
 
-    Private Sub TsiSkinSilver_Click(sender As Object, e As EventArgs) Handles TsiSkinSilver.Click
-        SetSkin("Silver")
-    End Sub
+    ' Private Sub TsiSkinSilver_Click(sender As Object, e As EventArgs) Handles TsiSkinSilver.Click
+    '     SetSkin("Silver")
+    ' End Sub
 
-    Private Sub TsiSkinGold_Click(sender As Object, e As EventArgs) Handles TsiSkinGold.Click
-        SetSkin("Gold")
-    End Sub
+    ' Private Sub TsiSkinGold_Click(sender As Object, e As EventArgs) Handles TsiSkinGold.Click
+    '     SetSkin("Gold")
+    ' End Sub
 
-    Private Sub TsiSkinHatsuneMiku_Click(sender As Object, e As EventArgs) Handles TsiSkinHatsuneMiku.Click
-        SetSkin("HatsuneMiku")
-    End Sub
+    ' Private Sub TsiSkinHatsuneMiku_Click(sender As Object, e As EventArgs) Handles TsiSkinHatsuneMiku.Click
+    '     SetSkin("HatsuneMiku")
+    ' End Sub
 
-    Private Sub TsiSkinNone_Click(sender As Object, e As EventArgs) Handles TsiSkinNone.Click
-        SetSkin("None")
-    End Sub
+    'Private Sub TsiSkinNone_Click(sender As Object, e As EventArgs) Handles TsiSkinNone.Click
+    '    SetSkin("None")
+    'End Sub
 
     Private Sub TsiCleanAllCache_Click(sender As Object, e As EventArgs) Handles TsiCleanAllCache.Click
         Try
@@ -2911,25 +2911,25 @@ nxt:        Next
         End Try
     End Sub
 
-    Private Sub TsiSkinCustomize_Click(sender As Object, e As EventArgs) Handles TsiSkinCustomize.Click
-        Try
-            If OfdSkin.ShowDialog = DialogResult.OK Then
-                Dim _loc_1 As String = OfdSkin.FileName
-                If My.Computer.FileSystem.FileExists(_loc_1) Then
-                    If New IO.FileInfo(_loc_1).Length > 10485760 Then
-                        MsgBox("自定义图片文件体积过大！", vbExclamation, "自定义皮肤设置")
-                    Else
-                        SkinCustomize.ShowDialog()
-                        If Not SkinRGB = "" Then
-                            SetSkin("(" & SkinRGB & ")" & Convert.ToBase64String(Zip(My.Computer.FileSystem.ReadAllBytes(_loc_1))))
-                        End If
-                    End If
-                End If
-            End If
-        Catch ex As Exception
-            MsgBox("导入自定义图片文件失败！", vbCritical, "自定义皮肤设置")
-        End Try
-    End Sub
+    ' Private Sub TsiSkinCustomize_Click(sender As Object, e As EventArgs) Handles TsiSkinCustomize.Click
+    '     Try
+    '         If OfdSkin.ShowDialog = DialogResult.OK Then
+    '             Dim _loc_1 As String = OfdSkin.FileName
+    '             If My.Computer.FileSystem.FileExists(_loc_1) Then
+    '                 If New IO.FileInfo(_loc_1).Length > 10485760 Then
+    '                     MsgBox("自定义图片文件体积过大！", vbExclamation, "自定义皮肤设置")
+    '                 Else
+    '                     SkinCustomize.ShowDialog()
+    '                     If Not SkinRGB = "" Then
+    '                         SetSkin("(" & SkinRGB & ")" & Convert.ToBase64String(Zip(My.Computer.FileSystem.ReadAllBytes(_loc_1))))
+    '                     End If
+    '                 End If
+    '             End If
+    '         End If
+    '     Catch ex As Exception
+    '         MsgBox("导入自定义图片文件失败！", vbCritical, "自定义皮肤设置")
+    '     End Try
+    ' End Sub
 
     Private Sub OpenLogFile()
         Try
@@ -3001,7 +3001,7 @@ nxt:        Next
 
     End Sub
 
-    Private Sub OfdSkin_FileOk(sender As Object, e As CancelEventArgs) Handles OfdSkin.FileOk
+    ' Private Sub OfdSkin_FileOk(sender As Object, e As CancelEventArgs) Handles OfdSkin.FileOk
 
-    End Sub
+    'End Sub
 End Class

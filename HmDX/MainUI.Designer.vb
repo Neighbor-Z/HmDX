@@ -56,14 +56,6 @@ Partial Class MainUI
         Me.TsiNewTaskWParam = New System.Windows.Forms.ToolStripMenuItem()
         Me.TsiUpgradeBatch = New System.Windows.Forms.ToolStripMenuItem()
         Me.TssMenu1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TsiSkin = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TsiSkinDefault = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TsiSkinWave = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TsiSkinSilver = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TsiSkinGold = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TsiSkinHatsuneMiku = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TsiSkinNone = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TsiSkinCustomize = New System.Windows.Forms.ToolStripMenuItem()
         Me.TssMenu2 = New System.Windows.Forms.ToolStripSeparator()
         Me.TsiCleanAllCache = New System.Windows.Forms.ToolStripMenuItem()
         Me.TsiOnlineHelp = New System.Windows.Forms.ToolStripMenuItem()
@@ -97,7 +89,7 @@ Partial Class MainUI
         Me.LblTitle.Font = New System.Drawing.Font("微软雅黑", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.LblTitle.Location = New System.Drawing.Point(119, 30)
         Me.LblTitle.Name = "LblTitle"
-        Me.LblTitle.Size = New System.Drawing.Size(330, 64)
+        Me.LblTitle.Size = New System.Drawing.Size(267, 64)
         Me.LblTitle.TabIndex = 1
         Me.LblTitle.Text = "很萌下载器"
         '
@@ -375,9 +367,9 @@ Partial Class MainUI
         'CMSMenu
         '
         Me.CMSMenu.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.CMSMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TsiNewTaskWParam, Me.TsiUpgradeBatch, Me.TssMenu1, Me.TsiSkin, Me.TssMenu2, Me.TsiCleanAllCache, Me.TsiOnlineHelp, Me.TsiAbout})
+        Me.CMSMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TsiNewTaskWParam, Me.TsiUpgradeBatch, Me.TssMenu1, Me.TssMenu2, Me.TsiCleanAllCache, Me.TsiOnlineHelp, Me.TsiAbout})
         Me.CMSMenu.Name = "ContextMenuStrip1"
-        Me.CMSMenu.Size = New System.Drawing.Size(459, 244)
+        Me.CMSMenu.Size = New System.Drawing.Size(459, 250)
         '
         'TsiNewTaskWParam
         '
@@ -395,57 +387,6 @@ Partial Class MainUI
         '
         Me.TssMenu1.Name = "TssMenu1"
         Me.TssMenu1.Size = New System.Drawing.Size(455, 6)
-        '
-        'TsiSkin
-        '
-        Me.TsiSkin.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TsiSkinDefault, Me.TsiSkinWave, Me.TsiSkinSilver, Me.TsiSkinGold, Me.TsiSkinHatsuneMiku, Me.TsiSkinNone, Me.TsiSkinCustomize})
-        Me.TsiSkin.Name = "TsiSkin"
-        Me.TsiSkin.Size = New System.Drawing.Size(458, 38)
-        Me.TsiSkin.Text = "皮肤设置(&S)"
-        '
-        'TsiSkinDefault
-        '
-        Me.TsiSkinDefault.Name = "TsiSkinDefault"
-        Me.TsiSkinDefault.Size = New System.Drawing.Size(243, 44)
-        Me.TsiSkinDefault.Text = "默认皮肤"
-        '
-        'TsiSkinWave
-        '
-        Me.TsiSkinWave.Name = "TsiSkinWave"
-        Me.TsiSkinWave.Size = New System.Drawing.Size(243, 44)
-        Me.TsiSkinWave.Text = "轻盈波澜"
-        '
-        'TsiSkinSilver
-        '
-        Me.TsiSkinSilver.Name = "TsiSkinSilver"
-        Me.TsiSkinSilver.Size = New System.Drawing.Size(243, 44)
-        Me.TsiSkinSilver.Text = "银光点缀"
-        '
-        'TsiSkinGold
-        '
-        Me.TsiSkinGold.Name = "TsiSkinGold"
-        Me.TsiSkinGold.Size = New System.Drawing.Size(243, 44)
-        Me.TsiSkinGold.Text = "土豪金"
-        '
-        'TsiSkinHatsuneMiku
-        '
-        Me.TsiSkinHatsuneMiku.Name = "TsiSkinHatsuneMiku"
-        Me.TsiSkinHatsuneMiku.Size = New System.Drawing.Size(243, 44)
-        Me.TsiSkinHatsuneMiku.Text = "初音未来"
-        Me.TsiSkinHatsuneMiku.Visible = False
-        '
-        'TsiSkinNone
-        '
-        Me.TsiSkinNone.Name = "TsiSkinNone"
-        Me.TsiSkinNone.Size = New System.Drawing.Size(243, 44)
-        Me.TsiSkinNone.Text = "无皮肤"
-        Me.TsiSkinNone.Visible = False
-        '
-        'TsiSkinCustomize
-        '
-        Me.TsiSkinCustomize.Name = "TsiSkinCustomize"
-        Me.TsiSkinCustomize.Size = New System.Drawing.Size(243, 44)
-        Me.TsiSkinCustomize.Text = "自定义"
         '
         'TssMenu2
         '
@@ -690,14 +631,7 @@ Partial Class MainUI
     Friend WithEvents TsiUpgradeBatch As ToolStripMenuItem
     Friend WithEvents LblSpeed As Label
     Friend WithEvents TsiOnlineHelp As ToolStripMenuItem
-    Friend WithEvents TsiSkin As ToolStripMenuItem
     Friend WithEvents TssMenu2 As ToolStripSeparator
-    Friend WithEvents TsiSkinDefault As ToolStripMenuItem
-    Friend WithEvents TsiSkinHatsuneMiku As ToolStripMenuItem
-    Friend WithEvents TsiSkinWave As ToolStripMenuItem
-    Friend WithEvents TsiSkinGold As ToolStripMenuItem
-    Friend WithEvents TsiSkinSilver As ToolStripMenuItem
-    Friend WithEvents TsiSkinNone As ToolStripMenuItem
     Friend WithEvents TsiCleanAllCache As ToolStripMenuItem
     Friend WithEvents TmrClipboard As Timer
     Friend WithEvents TmrAutoRestart As Timer
@@ -712,6 +646,5 @@ Partial Class MainUI
     Friend WithEvents TsiPathHistory4 As ToolStripMenuItem
     Friend WithEvents LblIndicator As Label
     Friend WithEvents LblWorking As Label
-    Friend WithEvents TsiSkinCustomize As ToolStripMenuItem
     Friend WithEvents OfdSkin As OpenFileDialog
 End Class

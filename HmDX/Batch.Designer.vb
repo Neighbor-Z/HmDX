@@ -103,9 +103,9 @@ Partial Class Batch
         Me.LsvQueue.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.LsvQueue.FullRowSelect = True
         Me.LsvQueue.HideSelection = False
-        Me.LsvQueue.Location = New System.Drawing.Point(10, 10)
+        Me.LsvQueue.Location = New System.Drawing.Point(17, 22)
         Me.LsvQueue.Name = "LsvQueue"
-        Me.LsvQueue.Size = New System.Drawing.Size(876, 290)
+        Me.LsvQueue.Size = New System.Drawing.Size(1272, 259)
         Me.LsvQueue.TabIndex = 10
         Me.LsvQueue.UseCompatibleStateImageBehavior = False
         Me.LsvQueue.View = System.Windows.Forms.View.Details
@@ -113,7 +113,7 @@ Partial Class Batch
         'ClhStatus
         '
         Me.ClhStatus.Text = "状态"
-        Me.ClhStatus.Width = 50
+        Me.ClhStatus.Width = 77
         '
         'ClhTaskName
         '
@@ -136,9 +136,9 @@ Partial Class Batch
         Me.BtnRemoveAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRemoveAll.Font = New System.Drawing.Font("微软雅黑", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.BtnRemoveAll.ForeColor = System.Drawing.Color.White
-        Me.BtnRemoveAll.Location = New System.Drawing.Point(949, 182)
+        Me.BtnRemoveAll.Location = New System.Drawing.Point(1494, 184)
         Me.BtnRemoveAll.Name = "BtnRemoveAll"
-        Me.BtnRemoveAll.Size = New System.Drawing.Size(50, 45)
+        Me.BtnRemoveAll.Size = New System.Drawing.Size(80, 71)
         Me.BtnRemoveAll.TabIndex = 37
         Me.BtnRemoveAll.Text = "×"
         Me.BtnRemoveAll.UseVisualStyleBackColor = False
@@ -149,9 +149,9 @@ Partial Class Batch
         Me.BtnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnRemove.Font = New System.Drawing.Font("微软雅黑", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.BtnRemove.ForeColor = System.Drawing.Color.White
-        Me.BtnRemove.Location = New System.Drawing.Point(895, 182)
+        Me.BtnRemove.Location = New System.Drawing.Point(1408, 184)
         Me.BtnRemove.Name = "BtnRemove"
-        Me.BtnRemove.Size = New System.Drawing.Size(50, 45)
+        Me.BtnRemove.Size = New System.Drawing.Size(80, 71)
         Me.BtnRemove.TabIndex = 35
         Me.BtnRemove.Text = "-"
         Me.BtnRemove.UseVisualStyleBackColor = False
@@ -159,63 +159,63 @@ Partial Class Batch
         'LblTaskName
         '
         Me.LblTaskName.AutoSize = True
-        Me.LblTaskName.Location = New System.Drawing.Point(10, 419)
+        Me.LblTaskName.Location = New System.Drawing.Point(12, 620)
         Me.LblTaskName.Name = "LblTaskName"
-        Me.LblTaskName.Size = New System.Drawing.Size(68, 21)
+        Me.LblTaskName.Size = New System.Drawing.Size(136, 41)
         Me.LblTaskName.TabIndex = 108
         Me.LblTaskName.Text = "[任务名]"
         '
         'TxtTaskName
         '
         Me.TxtTaskName.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TxtTaskName.Location = New System.Drawing.Point(14, 450)
+        Me.TxtTaskName.Location = New System.Drawing.Point(21, 672)
         Me.TxtTaskName.Name = "TxtTaskName"
-        Me.TxtTaskName.Size = New System.Drawing.Size(316, 26)
+        Me.TxtTaskName.Size = New System.Drawing.Size(436, 44)
         Me.TxtTaskName.TabIndex = 111
         '
         'LblSequence
         '
         Me.LblSequence.AutoSize = True
-        Me.LblSequence.Location = New System.Drawing.Point(10, 486)
+        Me.LblSequence.Location = New System.Drawing.Point(15, 729)
         Me.LblSequence.Name = "LblSequence"
-        Me.LblSequence.Size = New System.Drawing.Size(42, 21)
+        Me.LblSequence.Size = New System.Drawing.Size(82, 41)
         Me.LblSequence.TabIndex = 110
         Me.LblSequence.Text = "序列"
         '
         'LblConcurrent
         '
         Me.LblConcurrent.AutoSize = True
-        Me.LblConcurrent.Location = New System.Drawing.Point(902, 47)
+        Me.LblConcurrent.Location = New System.Drawing.Point(1315, 63)
         Me.LblConcurrent.Name = "LblConcurrent"
-        Me.LblConcurrent.Size = New System.Drawing.Size(90, 21)
+        Me.LblConcurrent.Size = New System.Drawing.Size(178, 41)
         Me.LblConcurrent.TabIndex = 111
         Me.LblConcurrent.Text = "并行任务数"
         '
         'NumConcurrent
         '
-        Me.NumConcurrent.Location = New System.Drawing.Point(906, 78)
+        Me.NumConcurrent.Location = New System.Drawing.Point(1322, 107)
         Me.NumConcurrent.Maximum = New Decimal(New Integer() {256, 0, 0, 0})
         Me.NumConcurrent.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumConcurrent.Name = "NumConcurrent"
-        Me.NumConcurrent.Size = New System.Drawing.Size(80, 29)
+        Me.NumConcurrent.Size = New System.Drawing.Size(80, 50)
         Me.NumConcurrent.TabIndex = 21
         Me.NumConcurrent.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'LblSeqCurrent
         '
         Me.LblSeqCurrent.AutoSize = True
-        Me.LblSeqCurrent.Location = New System.Drawing.Point(173, 487)
+        Me.LblSeqCurrent.Location = New System.Drawing.Point(244, 729)
         Me.LblSeqCurrent.Name = "LblSeqCurrent"
-        Me.LblSeqCurrent.Size = New System.Drawing.Size(42, 21)
+        Me.LblSeqCurrent.Size = New System.Drawing.Size(82, 41)
         Me.LblSeqCurrent.TabIndex = 113
         Me.LblSeqCurrent.Text = "当前"
         '
         'NumSeqCurrent
         '
-        Me.NumSeqCurrent.Location = New System.Drawing.Point(221, 484)
+        Me.NumSeqCurrent.Location = New System.Drawing.Point(348, 726)
         Me.NumSeqCurrent.Maximum = New Decimal(New Integer() {2147483647, 0, 0, 0})
         Me.NumSeqCurrent.Name = "NumSeqCurrent"
-        Me.NumSeqCurrent.Size = New System.Drawing.Size(109, 29)
+        Me.NumSeqCurrent.Size = New System.Drawing.Size(109, 50)
         Me.NumSeqCurrent.TabIndex = 121
         Me.NumSeqCurrent.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -225,46 +225,46 @@ Partial Class Batch
         Me.BtnAddLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnAddLocal.Font = New System.Drawing.Font("微软雅黑", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.BtnAddLocal.ForeColor = System.Drawing.Color.White
-        Me.BtnAddLocal.Location = New System.Drawing.Point(895, 133)
+        Me.BtnAddLocal.Location = New System.Drawing.Point(1408, 107)
         Me.BtnAddLocal.Name = "BtnAddLocal"
-        Me.BtnAddLocal.Size = New System.Drawing.Size(50, 45)
+        Me.BtnAddLocal.Size = New System.Drawing.Size(80, 71)
         Me.BtnAddLocal.TabIndex = 31
         Me.BtnAddLocal.Text = "+"
         Me.BtnAddLocal.UseVisualStyleBackColor = False
         '
         'NumSeqSupplement
         '
-        Me.NumSeqSupplement.Location = New System.Drawing.Point(221, 519)
+        Me.NumSeqSupplement.Location = New System.Drawing.Point(348, 792)
         Me.NumSeqSupplement.Maximum = New Decimal(New Integer() {128, 0, 0, 0})
         Me.NumSeqSupplement.Name = "NumSeqSupplement"
-        Me.NumSeqSupplement.Size = New System.Drawing.Size(109, 29)
+        Me.NumSeqSupplement.Size = New System.Drawing.Size(109, 50)
         Me.NumSeqSupplement.TabIndex = 127
         Me.NumSeqSupplement.Value = New Decimal(New Integer() {2, 0, 0, 0})
         '
         'LblSeqSupplement
         '
         Me.LblSeqSupplement.AutoSize = True
-        Me.LblSeqSupplement.Location = New System.Drawing.Point(173, 522)
+        Me.LblSeqSupplement.Location = New System.Drawing.Point(244, 794)
         Me.LblSeqSupplement.Name = "LblSeqSupplement"
-        Me.LblSeqSupplement.Size = New System.Drawing.Size(42, 21)
+        Me.LblSeqSupplement.Size = New System.Drawing.Size(82, 41)
         Me.LblSeqSupplement.TabIndex = 116
         Me.LblSeqSupplement.Text = "位数"
         '
         'NumSeqAscend
         '
-        Me.NumSeqAscend.Location = New System.Drawing.Point(58, 519)
+        Me.NumSeqAscend.Location = New System.Drawing.Point(115, 792)
         Me.NumSeqAscend.Maximum = New Decimal(New Integer() {1048576, 0, 0, 0})
         Me.NumSeqAscend.Name = "NumSeqAscend"
-        Me.NumSeqAscend.Size = New System.Drawing.Size(109, 29)
+        Me.NumSeqAscend.Size = New System.Drawing.Size(109, 50)
         Me.NumSeqAscend.TabIndex = 124
         Me.NumSeqAscend.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'LblSeqAscend
         '
         Me.LblSeqAscend.AutoSize = True
-        Me.LblSeqAscend.Location = New System.Drawing.Point(10, 522)
+        Me.LblSeqAscend.Location = New System.Drawing.Point(15, 794)
         Me.LblSeqAscend.Name = "LblSeqAscend"
-        Me.LblSeqAscend.Size = New System.Drawing.Size(42, 21)
+        Me.LblSeqAscend.Size = New System.Drawing.Size(82, 41)
         Me.LblSeqAscend.TabIndex = 118
         Me.LblSeqAscend.Text = "增量"
         '
@@ -273,34 +273,34 @@ Partial Class Batch
         Me.LblURL.AutoSize = True
         Me.LblURL.Location = New System.Drawing.Point(10, 313)
         Me.LblURL.Name = "LblURL"
-        Me.LblURL.Size = New System.Drawing.Size(52, 21)
+        Me.LblURL.Size = New System.Drawing.Size(104, 41)
         Me.LblURL.TabIndex = 120
         Me.LblURL.Text = "[链接]"
         '
         'TxtURL
         '
         Me.TxtURL.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TxtURL.Location = New System.Drawing.Point(14, 342)
+        Me.TxtURL.Location = New System.Drawing.Point(14, 375)
         Me.TxtURL.MaxLength = 0
         Me.TxtURL.Multiline = True
         Me.TxtURL.Name = "TxtURL"
-        Me.TxtURL.Size = New System.Drawing.Size(316, 68)
+        Me.TxtURL.Size = New System.Drawing.Size(443, 150)
         Me.TxtURL.TabIndex = 107
         '
         'LblArgs
         '
         Me.LblArgs.AutoSize = True
-        Me.LblArgs.Location = New System.Drawing.Point(356, 313)
+        Me.LblArgs.Location = New System.Drawing.Point(507, 314)
         Me.LblArgs.Name = "LblArgs"
-        Me.LblArgs.Size = New System.Drawing.Size(52, 21)
+        Me.LblArgs.Size = New System.Drawing.Size(104, 41)
         Me.LblArgs.TabIndex = 122
         Me.LblArgs.Text = "[参数]"
         '
         'BtnWorkPathBrowse
         '
-        Me.BtnWorkPathBrowse.Location = New System.Drawing.Point(678, 341)
+        Me.BtnWorkPathBrowse.Location = New System.Drawing.Point(999, 375)
         Me.BtnWorkPathBrowse.Name = "BtnWorkPathBrowse"
-        Me.BtnWorkPathBrowse.Size = New System.Drawing.Size(32, 28)
+        Me.BtnWorkPathBrowse.Size = New System.Drawing.Size(53, 44)
         Me.BtnWorkPathBrowse.TabIndex = 202
         Me.BtnWorkPathBrowse.Text = "&..."
         Me.BtnWorkPathBrowse.UseVisualStyleBackColor = True
@@ -308,19 +308,19 @@ Partial Class Batch
         'TxtWorkPath
         '
         Me.TxtWorkPath.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TxtWorkPath.Location = New System.Drawing.Point(453, 342)
+        Me.TxtWorkPath.Location = New System.Drawing.Point(694, 375)
         Me.TxtWorkPath.Name = "TxtWorkPath"
         Me.TxtWorkPath.ReadOnly = True
-        Me.TxtWorkPath.Size = New System.Drawing.Size(219, 26)
+        Me.TxtWorkPath.Size = New System.Drawing.Size(291, 44)
         Me.TxtWorkPath.TabIndex = 201
         '
         'LblWorkPath
         '
         Me.LblWorkPath.AutoSize = True
         Me.LblWorkPath.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.LblWorkPath.Location = New System.Drawing.Point(357, 344)
+        Me.LblWorkPath.Location = New System.Drawing.Point(510, 380)
         Me.LblWorkPath.Name = "LblWorkPath"
-        Me.LblWorkPath.Size = New System.Drawing.Size(90, 21)
+        Me.LblWorkPath.Size = New System.Drawing.Size(178, 41)
         Me.LblWorkPath.TabIndex = 129
         Me.LblWorkPath.Text = "工作目录："
         '
@@ -328,9 +328,9 @@ Partial Class Batch
         '
         Me.RadBinary.AutoSize = True
         Me.RadBinary.Checked = True
-        Me.RadBinary.Location = New System.Drawing.Point(613, 376)
+        Me.RadBinary.Location = New System.Drawing.Point(876, 449)
         Me.RadBinary.Name = "RadBinary"
-        Me.RadBinary.Size = New System.Drawing.Size(97, 25)
+        Me.RadBinary.Size = New System.Drawing.Size(190, 45)
         Me.RadBinary.TabIndex = 217
         Me.RadBinary.TabStop = True
         Me.RadBinary.Text = "&RAW输出"
@@ -339,9 +339,9 @@ Partial Class Batch
         'RadTS
         '
         Me.RadTS.AutoSize = True
-        Me.RadTS.Location = New System.Drawing.Point(533, 376)
+        Me.RadTS.Location = New System.Drawing.Point(785, 450)
         Me.RadTS.Name = "RadTS"
-        Me.RadTS.Size = New System.Drawing.Size(46, 25)
+        Me.RadTS.Size = New System.Drawing.Size(85, 45)
         Me.RadTS.TabIndex = 214
         Me.RadTS.Text = "&TS"
         Me.RadTS.UseVisualStyleBackColor = True
@@ -349,9 +349,9 @@ Partial Class Batch
         'RadMP4
         '
         Me.RadMP4.AutoSize = True
-        Me.RadMP4.Location = New System.Drawing.Point(453, 376)
+        Me.RadMP4.Location = New System.Drawing.Point(674, 450)
         Me.RadMP4.Name = "RadMP4"
-        Me.RadMP4.Size = New System.Drawing.Size(63, 25)
+        Me.RadMP4.Size = New System.Drawing.Size(119, 45)
         Me.RadMP4.TabIndex = 211
         Me.RadMP4.Text = "MP&4"
         Me.RadMP4.UseVisualStyleBackColor = True
@@ -359,9 +359,9 @@ Partial Class Batch
         'LblContainerFormat
         '
         Me.LblContainerFormat.AutoSize = True
-        Me.LblContainerFormat.Location = New System.Drawing.Point(357, 378)
+        Me.LblContainerFormat.Location = New System.Drawing.Point(510, 450)
         Me.LblContainerFormat.Name = "LblContainerFormat"
-        Me.LblContainerFormat.Size = New System.Drawing.Size(90, 21)
+        Me.LblContainerFormat.Size = New System.Drawing.Size(178, 41)
         Me.LblContainerFormat.TabIndex = 123
         Me.LblContainerFormat.Text = "封装格式："
         '
@@ -370,9 +370,9 @@ Partial Class Batch
         Me.ChkAutoExit.AutoSize = True
         Me.ChkAutoExit.Checked = True
         Me.ChkAutoExit.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ChkAutoExit.Location = New System.Drawing.Point(724, 376)
+        Me.ChkAutoExit.Location = New System.Drawing.Point(1069, 450)
         Me.ChkAutoExit.Name = "ChkAutoExit"
-        Me.ChkAutoExit.Size = New System.Drawing.Size(93, 25)
+        Me.ChkAutoExit.Size = New System.Drawing.Size(178, 45)
         Me.ChkAutoExit.TabIndex = 219
         Me.ChkAutoExit.Text = "自动退出"
         Me.ChkAutoExit.UseVisualStyleBackColor = True
@@ -380,9 +380,9 @@ Partial Class Batch
         'ChkIsLive
         '
         Me.ChkIsLive.AutoSize = True
-        Me.ChkIsLive.Location = New System.Drawing.Point(489, 408)
+        Me.ChkIsLive.Location = New System.Drawing.Point(759, 515)
         Me.ChkIsLive.Name = "ChkIsLive"
-        Me.ChkIsLive.Size = New System.Drawing.Size(61, 25)
+        Me.ChkIsLive.Size = New System.Drawing.Size(114, 45)
         Me.ChkIsLive.TabIndex = 234
         Me.ChkIsLive.Text = "直播"
         Me.ChkIsLive.UseVisualStyleBackColor = True
@@ -390,9 +390,9 @@ Partial Class Batch
         'ChkTwoPass
         '
         Me.ChkTwoPass.AutoSize = True
-        Me.ChkTwoPass.Location = New System.Drawing.Point(609, 408)
+        Me.ChkTwoPass.Location = New System.Drawing.Point(995, 515)
         Me.ChkTwoPass.Name = "ChkTwoPass"
-        Me.ChkTwoPass.Size = New System.Drawing.Size(110, 25)
+        Me.ChkTwoPass.Size = New System.Drawing.Size(215, 45)
         Me.ChkTwoPass.TabIndex = 237
         Me.ChkTwoPass.Text = "2-Pass校验"
         Me.ChkTwoPass.UseVisualStyleBackColor = True
@@ -402,9 +402,9 @@ Partial Class Batch
         Me.ChkAutoStart.AutoSize = True
         Me.ChkAutoStart.Checked = True
         Me.ChkAutoStart.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ChkAutoStart.Location = New System.Drawing.Point(724, 343)
+        Me.ChkAutoStart.Location = New System.Drawing.Point(1069, 379)
         Me.ChkAutoStart.Name = "ChkAutoStart"
-        Me.ChkAutoStart.Size = New System.Drawing.Size(93, 25)
+        Me.ChkAutoStart.Size = New System.Drawing.Size(178, 45)
         Me.ChkAutoStart.TabIndex = 208
         Me.ChkAutoStart.Text = "自动开始"
         Me.ChkAutoStart.UseVisualStyleBackColor = True
@@ -412,9 +412,9 @@ Partial Class Batch
         'ChkMute
         '
         Me.ChkMute.AutoSize = True
-        Me.ChkMute.Location = New System.Drawing.Point(489, 439)
+        Me.ChkMute.Location = New System.Drawing.Point(759, 587)
         Me.ChkMute.Name = "ChkMute"
-        Me.ChkMute.Size = New System.Drawing.Size(109, 25)
+        Me.ChkMute.Size = New System.Drawing.Size(210, 45)
         Me.ChkMute.TabIndex = 254
         Me.ChkMute.Text = "关闭提示音"
         Me.ChkMute.UseVisualStyleBackColor = True
@@ -422,9 +422,9 @@ Partial Class Batch
         'ChkNoStream
         '
         Me.ChkNoStream.AutoSize = True
-        Me.ChkNoStream.Location = New System.Drawing.Point(361, 439)
+        Me.ChkNoStream.Location = New System.Drawing.Point(517, 587)
         Me.ChkNoStream.Name = "ChkNoStream"
-        Me.ChkNoStream.Size = New System.Drawing.Size(109, 25)
+        Me.ChkNoStream.Size = New System.Drawing.Size(210, 45)
         Me.ChkNoStream.TabIndex = 251
         Me.ChkNoStream.Text = "仅下载列表"
         Me.ChkNoStream.UseVisualStyleBackColor = True
@@ -432,9 +432,9 @@ Partial Class Batch
         'ChkAutoSelectHigh
         '
         Me.ChkAutoSelectHigh.AutoSize = True
-        Me.ChkAutoSelectHigh.Location = New System.Drawing.Point(489, 470)
+        Me.ChkAutoSelectHigh.Location = New System.Drawing.Point(517, 719)
         Me.ChkAutoSelectHigh.Name = "ChkAutoSelectHigh"
-        Me.ChkAutoSelectHigh.Size = New System.Drawing.Size(93, 25)
+        Me.ChkAutoSelectHigh.Size = New System.Drawing.Size(178, 45)
         Me.ChkAutoSelectHigh.TabIndex = 274
         Me.ChkAutoSelectHigh.Text = "最高质量"
         Me.ChkAutoSelectHigh.UseVisualStyleBackColor = True
@@ -442,9 +442,9 @@ Partial Class Batch
         'ChkThreads
         '
         Me.ChkThreads.AutoSize = True
-        Me.ChkThreads.Location = New System.Drawing.Point(609, 470)
+        Me.ChkThreads.Location = New System.Drawing.Point(759, 719)
         Me.ChkThreads.Name = "ChkThreads"
-        Me.ChkThreads.Size = New System.Drawing.Size(109, 25)
+        Me.ChkThreads.Size = New System.Drawing.Size(210, 45)
         Me.ChkThreads.TabIndex = 291
         Me.ChkThreads.Text = "下载线程数"
         Me.ChkThreads.UseVisualStyleBackColor = True
@@ -452,9 +452,9 @@ Partial Class Batch
         'ChkTimeout
         '
         Me.ChkTimeout.AutoSize = True
-        Me.ChkTimeout.Location = New System.Drawing.Point(609, 439)
+        Me.ChkTimeout.Location = New System.Drawing.Point(759, 652)
         Me.ChkTimeout.Name = "ChkTimeout"
-        Me.ChkTimeout.Size = New System.Drawing.Size(103, 25)
+        Me.ChkTimeout.Size = New System.Drawing.Size(200, 45)
         Me.ChkTimeout.TabIndex = 257
         Me.ChkTimeout.Text = "超时(毫秒)"
         Me.ChkTimeout.UseVisualStyleBackColor = True
@@ -462,17 +462,17 @@ Partial Class Batch
         'TxtThreads
         '
         Me.TxtThreads.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TxtThreads.Location = New System.Drawing.Point(724, 470)
+        Me.TxtThreads.Location = New System.Drawing.Point(978, 724)
         Me.TxtThreads.Name = "TxtThreads"
-        Me.TxtThreads.Size = New System.Drawing.Size(90, 26)
+        Me.TxtThreads.Size = New System.Drawing.Size(232, 44)
         Me.TxtThreads.TabIndex = 292
         '
         'TxtTimeout
         '
         Me.TxtTimeout.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TxtTimeout.Location = New System.Drawing.Point(724, 440)
+        Me.TxtTimeout.Location = New System.Drawing.Point(978, 654)
         Me.TxtTimeout.Name = "TxtTimeout"
-        Me.TxtTimeout.Size = New System.Drawing.Size(90, 26)
+        Me.TxtTimeout.Size = New System.Drawing.Size(232, 44)
         Me.TxtTimeout.TabIndex = 258
         '
         'ChkMinimize
@@ -480,9 +480,9 @@ Partial Class Batch
         Me.ChkMinimize.AutoSize = True
         Me.ChkMinimize.Checked = True
         Me.ChkMinimize.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ChkMinimize.Location = New System.Drawing.Point(361, 408)
+        Me.ChkMinimize.Location = New System.Drawing.Point(517, 515)
         Me.ChkMinimize.Name = "ChkMinimize"
-        Me.ChkMinimize.Size = New System.Drawing.Size(77, 25)
+        Me.ChkMinimize.Size = New System.Drawing.Size(146, 45)
         Me.ChkMinimize.TabIndex = 231
         Me.ChkMinimize.Text = "最小化"
         Me.ChkMinimize.UseVisualStyleBackColor = True
@@ -490,28 +490,28 @@ Partial Class Batch
         'LblOptions
         '
         Me.LblOptions.AutoSize = True
-        Me.LblOptions.Location = New System.Drawing.Point(356, 503)
+        Me.LblOptions.Location = New System.Drawing.Point(510, 794)
         Me.LblOptions.Name = "LblOptions"
-        Me.LblOptions.Size = New System.Drawing.Size(90, 21)
+        Me.LblOptions.Size = New System.Drawing.Size(178, 41)
         Me.LblOptions.TabIndex = 144
         Me.LblOptions.Text = "更多参数："
         '
         'TxtOptions
         '
         Me.TxtOptions.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TxtOptions.Location = New System.Drawing.Point(452, 504)
+        Me.TxtOptions.Location = New System.Drawing.Point(674, 794)
         Me.TxtOptions.MaxLength = 0
         Me.TxtOptions.Multiline = True
         Me.TxtOptions.Name = "TxtOptions"
-        Me.TxtOptions.Size = New System.Drawing.Size(362, 47)
+        Me.TxtOptions.Size = New System.Drawing.Size(573, 47)
         Me.TxtOptions.TabIndex = 301
         '
         'LblTask
         '
         Me.LblTask.AutoSize = True
-        Me.LblTask.Location = New System.Drawing.Point(844, 313)
+        Me.LblTask.Location = New System.Drawing.Point(1284, 377)
         Me.LblTask.Name = "LblTask"
-        Me.LblTask.Size = New System.Drawing.Size(52, 21)
+        Me.LblTask.Size = New System.Drawing.Size(104, 41)
         Me.LblTask.TabIndex = 146
         Me.LblTask.Text = "[任务]"
         '
@@ -519,37 +519,38 @@ Partial Class Batch
         '
         Me.BtnTaskStart.BackColor = System.Drawing.Color.DarkGreen
         Me.BtnTaskStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnTaskStart.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.BtnTaskStart.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold)
         Me.BtnTaskStart.ForeColor = System.Drawing.Color.White
-        Me.BtnTaskStart.Location = New System.Drawing.Point(848, 512)
+        Me.BtnTaskStart.Location = New System.Drawing.Point(1288, 684)
         Me.BtnTaskStart.Name = "BtnTaskStart"
-        Me.BtnTaskStart.Size = New System.Drawing.Size(147, 40)
+        Me.BtnTaskStart.Size = New System.Drawing.Size(286, 63)
         Me.BtnTaskStart.TabIndex = 531
         Me.BtnTaskStart.Text = "启动任务(&S)"
         Me.BtnTaskStart.UseVisualStyleBackColor = False
         '
         'BtnTaskQueue
         '
-        Me.BtnTaskQueue.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BtnTaskQueue.BackColor = System.Drawing.Color.SteelBlue
         Me.BtnTaskQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnTaskQueue.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.BtnTaskQueue.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold)
         Me.BtnTaskQueue.ForeColor = System.Drawing.Color.White
-        Me.BtnTaskQueue.Location = New System.Drawing.Point(848, 428)
+        Me.BtnTaskQueue.Location = New System.Drawing.Point(1288, 552)
         Me.BtnTaskQueue.Name = "BtnTaskQueue"
-        Me.BtnTaskQueue.Size = New System.Drawing.Size(147, 40)
+        Me.BtnTaskQueue.Size = New System.Drawing.Size(286, 61)
         Me.BtnTaskQueue.TabIndex = 511
         Me.BtnTaskQueue.Text = "添加至队列(&Q)"
         Me.BtnTaskQueue.UseVisualStyleBackColor = False
         '
         'ChkTaskSuspend
         '
-        Me.ChkTaskSuspend.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ChkTaskSuspend.BackColor = System.Drawing.Color.Olive
         Me.ChkTaskSuspend.Checked = True
         Me.ChkTaskSuspend.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ChkTaskSuspend.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.ChkTaskSuspend.Location = New System.Drawing.Point(848, 385)
+        Me.ChkTaskSuspend.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.ChkTaskSuspend.ForeColor = System.Drawing.Color.White
+        Me.ChkTaskSuspend.Location = New System.Drawing.Point(1288, 487)
         Me.ChkTaskSuspend.Name = "ChkTaskSuspend"
-        Me.ChkTaskSuspend.Size = New System.Drawing.Size(147, 40)
+        Me.ChkTaskSuspend.Size = New System.Drawing.Size(286, 59)
         Me.ChkTaskSuspend.TabIndex = 505
         Me.ChkTaskSuspend.Text = "挂起队列(&P)"
         Me.ChkTaskSuspend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -559,11 +560,11 @@ Partial Class Batch
         '
         Me.BtnTaskOverride.BackColor = System.Drawing.Color.Teal
         Me.BtnTaskOverride.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnTaskOverride.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.BtnTaskOverride.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold)
         Me.BtnTaskOverride.ForeColor = System.Drawing.Color.White
-        Me.BtnTaskOverride.Location = New System.Drawing.Point(848, 470)
+        Me.BtnTaskOverride.Location = New System.Drawing.Point(1288, 619)
         Me.BtnTaskOverride.Name = "BtnTaskOverride"
-        Me.BtnTaskOverride.Size = New System.Drawing.Size(147, 40)
+        Me.BtnTaskOverride.Size = New System.Drawing.Size(286, 63)
         Me.BtnTaskOverride.TabIndex = 521
         Me.BtnTaskOverride.Text = "应用参数(&A)"
         Me.BtnTaskOverride.UseVisualStyleBackColor = False
@@ -571,9 +572,9 @@ Partial Class Batch
         'LblQueue
         '
         Me.LblQueue.AutoSize = True
-        Me.LblQueue.Location = New System.Drawing.Point(895, 10)
+        Me.LblQueue.Location = New System.Drawing.Point(1315, 22)
         Me.LblQueue.Name = "LblQueue"
-        Me.LblQueue.Size = New System.Drawing.Size(52, 21)
+        Me.LblQueue.Size = New System.Drawing.Size(104, 41)
         Me.LblQueue.TabIndex = 151
         Me.LblQueue.Text = "[队列]"
         '
@@ -589,9 +590,9 @@ Partial Class Batch
         'ChkNoAutoClean
         '
         Me.ChkNoAutoClean.AutoSize = True
-        Me.ChkNoAutoClean.Location = New System.Drawing.Point(361, 470)
+        Me.ChkNoAutoClean.Location = New System.Drawing.Point(517, 652)
         Me.ChkNoAutoClean.Name = "ChkNoAutoClean"
-        Me.ChkNoAutoClean.Size = New System.Drawing.Size(109, 25)
+        Me.ChkNoAutoClean.Size = New System.Drawing.Size(210, 45)
         Me.ChkNoAutoClean.TabIndex = 271
         Me.ChkNoAutoClean.Text = "不清除缓存"
         Me.ChkNoAutoClean.UseVisualStyleBackColor = True
@@ -599,27 +600,27 @@ Partial Class Batch
         'LblIdentifier
         '
         Me.LblIdentifier.AutoSize = True
-        Me.LblIdentifier.Location = New System.Drawing.Point(82, 313)
+        Me.LblIdentifier.Location = New System.Drawing.Point(14, 553)
         Me.LblIdentifier.Name = "LblIdentifier"
-        Me.LblIdentifier.Size = New System.Drawing.Size(90, 21)
+        Me.LblIdentifier.Size = New System.Drawing.Size(178, 41)
         Me.LblIdentifier.TabIndex = 532
         Me.LblIdentifier.Text = "鉴别字符串"
         '
         'TxtIdentifier
         '
         Me.TxtIdentifier.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.TxtIdentifier.Location = New System.Drawing.Point(180, 311)
+        Me.TxtIdentifier.Location = New System.Drawing.Point(185, 553)
         Me.TxtIdentifier.Name = "TxtIdentifier"
-        Me.TxtIdentifier.Size = New System.Drawing.Size(119, 26)
+        Me.TxtIdentifier.Size = New System.Drawing.Size(209, 44)
         Me.TxtIdentifier.TabIndex = 103
         '
         'BtnIdentifierClear
         '
         Me.BtnIdentifierClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.BtnIdentifierClear.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.BtnIdentifierClear.Location = New System.Drawing.Point(302, 311)
+        Me.BtnIdentifierClear.Location = New System.Drawing.Point(407, 552)
         Me.BtnIdentifierClear.Name = "BtnIdentifierClear"
-        Me.BtnIdentifierClear.Size = New System.Drawing.Size(28, 26)
+        Me.BtnIdentifierClear.Size = New System.Drawing.Size(50, 51)
         Me.BtnIdentifierClear.TabIndex = 104
         Me.BtnIdentifierClear.Text = "←"
         Me.BtnIdentifierClear.UseVisualStyleBackColor = False
@@ -630,11 +631,12 @@ Partial Class Batch
         '
         'ChkAutoPowerOff
         '
-        Me.ChkAutoPowerOff.BackColor = System.Drawing.Color.Aqua
+        Me.ChkAutoPowerOff.BackColor = System.Drawing.Color.Teal
         Me.ChkAutoPowerOff.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.ChkAutoPowerOff.Location = New System.Drawing.Point(848, 341)
+        Me.ChkAutoPowerOff.ForeColor = System.Drawing.Color.White
+        Me.ChkAutoPowerOff.Location = New System.Drawing.Point(1288, 430)
         Me.ChkAutoPowerOff.Name = "ChkAutoPowerOff"
-        Me.ChkAutoPowerOff.Size = New System.Drawing.Size(147, 40)
+        Me.ChkAutoPowerOff.Size = New System.Drawing.Size(286, 51)
         Me.ChkAutoPowerOff.TabIndex = 501
         Me.ChkAutoPowerOff.Text = "完成后关机(&D)"
         Me.ChkAutoPowerOff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -646,9 +648,9 @@ Partial Class Batch
         Me.BtnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnExport.Font = New System.Drawing.Font("微软雅黑", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.BtnExport.ForeColor = System.Drawing.Color.White
-        Me.BtnExport.Location = New System.Drawing.Point(949, 133)
+        Me.BtnExport.Location = New System.Drawing.Point(1494, 107)
         Me.BtnExport.Name = "BtnExport"
-        Me.BtnExport.Size = New System.Drawing.Size(50, 45)
+        Me.BtnExport.Size = New System.Drawing.Size(80, 71)
         Me.BtnExport.TabIndex = 33
         Me.BtnExport.Tag = ""
         Me.BtnExport.Text = "o"
@@ -683,9 +685,9 @@ Partial Class Batch
         Me.BtnTop.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnTop.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.BtnTop.ForeColor = System.Drawing.Color.White
-        Me.BtnTop.Location = New System.Drawing.Point(895, 231)
+        Me.BtnTop.Location = New System.Drawing.Point(1408, 266)
         Me.BtnTop.Name = "BtnTop"
-        Me.BtnTop.Size = New System.Drawing.Size(50, 45)
+        Me.BtnTop.Size = New System.Drawing.Size(80, 71)
         Me.BtnTop.TabIndex = 38
         Me.BtnTop.Text = "▲"
         Me.BtnTop.UseVisualStyleBackColor = False
@@ -696,9 +698,9 @@ Partial Class Batch
         Me.BtnBottom.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnBottom.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.BtnBottom.ForeColor = System.Drawing.Color.White
-        Me.BtnBottom.Location = New System.Drawing.Point(949, 231)
+        Me.BtnBottom.Location = New System.Drawing.Point(1494, 266)
         Me.BtnBottom.Name = "BtnBottom"
-        Me.BtnBottom.Size = New System.Drawing.Size(50, 45)
+        Me.BtnBottom.Size = New System.Drawing.Size(80, 71)
         Me.BtnBottom.TabIndex = 39
         Me.BtnBottom.Text = "▼"
         Me.BtnBottom.UseVisualStyleBackColor = False
@@ -708,8 +710,8 @@ Partial Class Batch
         Me.AllowDrop = True
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.BackColor = System.Drawing.Color.LightCyan
-        Me.ClientSize = New System.Drawing.Size(1008, 561)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1605, 869)
         Me.Controls.Add(Me.BtnBottom)
         Me.Controls.Add(Me.BtnTop)
         Me.Controls.Add(Me.BtnExport)
