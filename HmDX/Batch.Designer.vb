@@ -104,6 +104,8 @@ Partial Class Batch
         Me.LsvQueue.FullRowSelect = True
         Me.LsvQueue.HideSelection = False
         Me.LsvQueue.Location = New System.Drawing.Point(17, 22)
+        Me.LsvQueue.MaximumSize = New System.Drawing.Size(1272, 259)
+        Me.LsvQueue.MinimumSize = New System.Drawing.Size(1272, 259)
         Me.LsvQueue.Name = "LsvQueue"
         Me.LsvQueue.Size = New System.Drawing.Size(1272, 259)
         Me.LsvQueue.TabIndex = 10
